@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #fff;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+h1 {
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contenedor-navegacion {
+    background-image: url(../img/casa-maps.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 70rem;
+}
+
+.navegacion-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5rem 10rem;
+}
+
+/* Info Section */
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80%;
+    margin-right: 10rem;
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.424);
+    display: grid;
+    grid-template-columns: 20rem 7rem 7rem;
+    grid-template-rows: 7rem 7rem 7rem;
+}
+
+.info > p {
+    grid-row: 2 / 3;
+    line-height: 1;
+    margin: auto auto auto 1rem;
+}
+
+.info > h2 {
+    margin: 0;
+    margin: auto;
+}
+
+.info > .contact-btn {
+    display: block;
+    grid-row: 3 / 4;
+    margin: auto;
+}
+
+.icon {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon > p {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Carousell */
+
+.carousell-img {
+    margin-top: 2rem;
+}
+
+.gallery {
+    background: #EEE;
+    height: 400px;
+}
+
+.gallery-cell {
+    width: 66%;
+    height: 400px;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    content: counter(gallery-cell);
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
