@@ -6,18 +6,28 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
-    color: #fff;
-    background-color: black;
+    color: #000000;
+    background-color: #fff;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap');
+
+/* Globales */
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
+
 h1 {
     margin: 0;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -25,6 +35,7 @@ h1 {
 header {
     text-align: center;
     font-size: 1.5rem;
+    color: #fff;
 }
 
 .contenedor-navegacion {
@@ -33,6 +44,7 @@ header {
     background-size: cover;
     background-position: center center;
     height: 70rem;
+    overflow: hidden;
 }
 
 .navegacion-principal {
@@ -43,21 +55,32 @@ header {
     padding: .5rem 10rem;
 }
 
+.navegacion-principal > a {
+    color: #fff;
+}
+
+.navegacion-principal > a:hover {
+    background-color: rgba(0, 0, 0, 0.424);
+    padding: .5rem;
+}
+
 /* Info Section */
 
 .info-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 80%;
-    margin-right: 10rem;
+    height: 100%;
 }
 
 .info {
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.424);
     display: grid;
     grid-template-columns: 20rem 7rem 7rem;
     grid-template-rows: 7rem 7rem 7rem;
+    height: 100%;
+    width: 40%;
 }
 
 .info > p {
@@ -94,34 +117,4 @@ header {
     text-align: center;
 }
 
-/* Carousell */
-
-.carousell-img {
-    margin-top: 2rem;
-}
-
-.gallery {
-    background: #EEE;
-    height: 400px;
-}
-
-.gallery-cell {
-    width: 66%;
-    height: 400px;
-    margin-right: 10px;
-    counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-    display: block;
-    content: counter(gallery-cell);
-    text-align: center;
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
