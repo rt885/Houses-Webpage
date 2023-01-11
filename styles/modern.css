@@ -1,0 +1,123 @@
+:root {
+    --main-color: rgb(23, 21, 18);
+    --white: #fff;
+    --black: #000;
+    --black-degradation: rgba(0, 0, 0, 0.424);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap');
+
+/* Globales */
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Header */
+
+h1 {
+    margin-right: 35rem;
+}
+
+.navegacion-principal {
+    margin: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.navegacion-principal > a {
+    transition: background-color .5s;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.navegacion-principal > a:hover {
+    background-color: var(--black-degradation);
+}
+
+/* Main */
+
+.main-flex {
+    height: 65rem;
+}
+
+.main-title {
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    font-size: 9rem;
+    margin: 4rem 0;
+    line-height: 1;
+}
+
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8rem;
+    margin-top: 15rem;
+    margin: 15rem 8rem 8rem 0;
+}
+
+.main-text > a {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    color: var(--black);
+    transition: background-color .5s;
+    border-radius: .5rem;
+}
+
+.main-text > a:hover {
+    background-color: var(--black-degradation);
+    color: var(--white);
+}
+
+.main-description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.main-description > img { 
+    width: 80rem;
+    height: 50rem;
+}
