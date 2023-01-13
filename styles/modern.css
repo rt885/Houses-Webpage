@@ -1,8 +1,9 @@
 :root {
-    --main-color: rgb(23, 21, 18);
-    --white: #fff;
+    --main-color: #171512;
+    --main-text: #837D74;
     --black: #000;
     --black-degradation: rgba(0, 0, 0, 0.424);
+    --white: #FFF
 }
 
 html {
@@ -16,7 +17,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
-    color: var(--white);
+    color: var(--main-text);
     background-color: var(--main-color);
 }
 
@@ -29,20 +30,43 @@ body {
 /* Globales */
 a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--main-text);
 }
 
-h1 {
-    margin: 0;
-}
-
-h2 {
+h1, h2, h3 {
     margin: 0;
 }
 
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+}
+
+img {
+    filter: opacity(80%);
+}
+
+/* Animations */
+@keyframes slidein-left {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slidein-right {
+    from {
+        margin-left: -100%;
+        width: -300%;
+    }
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
 }
 
 /* Header */
@@ -84,7 +108,6 @@ h1 {
     line-height: 1;
 }
 
-
 .main-text {
     display: flex;
     flex-direction: column;
@@ -98,7 +121,7 @@ h1 {
 .main-text > a {
     margin-top: 1rem;
     padding: 1rem 2rem;
-    background-color: var(--white);
+    background-color: var(--main-text);
     color: var(--black);
     transition: background-color .5s;
     border-radius: .5rem;
@@ -106,7 +129,7 @@ h1 {
 
 .main-text > a:hover {
     background-color: var(--black-degradation);
-    color: var(--white);
+    color: var(--main-text);
 }
 
 .main-description {
@@ -120,4 +143,73 @@ h1 {
 .main-description > img { 
     width: 80rem;
     height: 50rem;
+}
+
+/* Slide animations section */
+
+.animate .first-slide {
+    animation-duration: 1.5s;
+    animation-name: slidein-left;
+}
+
+.animate .second-slide {
+    animation-duration: 1.5s;
+    animation-name: slidein-right;
+}
+
+.slide {
+    margin-top: 10rem;
+}
+
+.first-slide, .second-slide {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.first-slide span, .second-slide span {
+    text-align: center;
+    font-size: 5rem;
+}
+
+/* General info */
+
+.general-info {
+    margin-top: 5rem;
+}
+
+.flex-info {
+    display: flex;
+    justify-content: center;
+}
+
+.info-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+}
+
+.info-img > img {
+    width: 60rem;
+    height: 50rem;
+}
+
+.info-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section-content {
+    display: inline;
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+.info-section-content > h3 {
+    text-align: center;
 }
