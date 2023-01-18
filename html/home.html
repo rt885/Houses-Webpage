@@ -24,7 +24,7 @@
         <div class="main-flex contenedor">
             <div class="main-title contenedor">
                 <span>Haz de esta casa</span>
-                <h2>tu NUEVO HOGAR</h2>
+                <h2> tu NUEVO HOGAR</h2>
             </div>
             <div class="main-description">
                 <div class="main-text">
@@ -58,8 +58,85 @@
             </div>
         </div>
     </section>
+    <main class="contenedor main">
+        <h2>Detalles de tu futura casa nueva</h2>
+        <section class="descripcion-general">
+            <div class="descripcion-grid ajuste">
+                <div class="icon">
+                    <i class="fa-solid fa-ruler-combined fa-xl"></i>
+                    <p>448m² Terreno</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-person-digging fa-2xl"></i>
+                    <p>296m² Construccion</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-bed fa-2xl"></i>
+                    <p>4 Cuartos</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-toilet fa-2xl"></i>
+                    <p>3 Baños Completos</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-tree fa-2xl"></i>
+                    <p>Amplio Jardín</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-car fa-2xl"></i>
+                    <p>4 Cajones</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-person-shelter fa-2xl"></i>
+                    <p>1 Cuarto de Servicio</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-kitchen-set fa-2xl"></i>
+                    <p>Amplia Cocina</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-utensils fa-2xl"></i>
+                    <p>Amplio Comedor</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-tv fa-2xl"></i>
+                    <p>Amplia Sala</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-fan fa-2xl"></i>
+                    <p>Clima Central</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Responsive tab section -->
+    <section class="contenedor">
+        <div class="tabs-container ajuste">
+            <div class="titulo-tabs">
+                <h2>Aspectos generales de tu futura casa</h2>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            </div>
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 
 <script src="https://kit.fontawesome.com/8b5be5bef8.js" crossorigin="anonymous"></script>
 <script src="../js/slide-animations.js"></script>
+<script src="../js/responsive-tabs.js"></script>
