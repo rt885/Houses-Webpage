@@ -317,7 +317,8 @@ h1 {
 }
 
 .titulo-tabs {
-    margin: 5rem 0;
+    margin: 5rem 0 2rem 0;
     font-size: 2rem;
     text-align: center;
 }
+
